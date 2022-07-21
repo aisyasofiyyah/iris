@@ -33,11 +33,9 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-image1= image.open("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png")
-image2= image.open("versicolor.png")
-image3= image.open["virginica.png"]
-
-st.image([image1,image2])
+image1= Image.open('setosa.png')
+image2= Image.open('versicolor.png')
+image3= Image.open('virginica.png')
 
 st.write(pd.DataFrame({
         'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
