@@ -40,16 +40,16 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.header("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
+    st.subheader("0 Iris Setosa")
+    st.image("setosa.png", width=100)
 
 with col2:
-    st.header("A dog")
-    st.image("https://static.streamlit.io/examples/dog.jpg")
+    st.header("1 Iris Versicolor")
+    st.image('versicolor.jpg')
 
 with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
+    st.header("2 Iris Virginica")
+    st.image("virginica.jpg")
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
