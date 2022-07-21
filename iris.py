@@ -34,7 +34,7 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-image= Image.open('setosa.png')
+st.image("https://en.wikipedia.org/wiki/Iris_setosa")
 #image2= Image.open('versicolor.png')
 #image3= Image.open('virginica.png')
 
