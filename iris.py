@@ -41,15 +41,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.subheader("0 Iris Setosa")
-    st.image("setosa.png", width=100)
+    st.image("setosa.png", width=300)
 
 with col2:
     st.header("1 Iris Versicolor")
-    st.image('versicolor.jpg')
+    st.image("versicolor.jpg",width=300)
 
 with col3:
     st.header("2 Iris Virginica")
-    st.image("virginica.jpg")
+    st.image("virginica.jpg",width=300)
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
