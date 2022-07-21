@@ -33,9 +33,9 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-image1= st.image("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png")
-image2= st.image("https://github.com/aisyasofiyyah/iris/blob/main/versicolor.png")
-image3= st.image("https://github.com/aisyasofiyyah/iris/blob/main/virginica.png")
+image1= image.open("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png")
+image2= image.open("versicolor.png")
+image3= image.open["virginica.png"]
 
 st.image([image1,image2])
 
