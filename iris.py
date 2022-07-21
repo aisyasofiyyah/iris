@@ -43,7 +43,7 @@ with st.expander("See explanation"):
          be random.
      """)
         
-        col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3)
 
 with col1:
         st.header('Class labels and their corresponding index number')
