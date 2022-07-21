@@ -36,14 +36,30 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-st.subheader('Class labels and their corresponding index number')
-st.write(pd.DataFrame({
-     'Species': ['Iris_setosa','Iris-versicolor','Iris_virginica'],
- }))
+with st.expander("See explanation"):
+     st.write("""
+         The chart above shows some numbers I picked for you.
+         I rolled actual dice for these, so they're *guaranteed* to
+         be random.
+     """)
+        
+        col1, col2, col3 = st.columns(3)
 
-st.subheader('Prediction')
-#st.write(iris.target_names[prediction])
-st.write(prediction)
+with col1:
+        st.header('Class labels and their corresponding index number')
+        st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
-st.subheader('Prediction Probability')
-st.write(prediction_proba)
+with col2:
+        st.subheader('Prediction')
+        st.write(prediction)
+
+with col3:
+        st.subheader('Prediction Probability')
+        st.write(prediction_proba)
+        
+        
+        
+        
+   
+
+    
