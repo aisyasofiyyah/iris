@@ -41,9 +41,9 @@ with tab1:
     st.write(df)
 
 with tab2:
-     st.header("Results")
+    st.header("Results")
         
-     col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.subheader('Class labels and index number')
