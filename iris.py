@@ -7,7 +7,7 @@ st.write("""
 This app predicts the **Iris flower** type.
 """)
 
-st.image('iris.png')
+st.image('iris.jpg')
 
 st.sidebar.header('User Input Parameters')
 
