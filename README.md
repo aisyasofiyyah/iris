@@ -1,1 +1,2 @@
-# iris
+# Iris Exercise 
+By Aisya Sofiyyah
