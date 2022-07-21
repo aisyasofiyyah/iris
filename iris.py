@@ -34,22 +34,9 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-#st.write(pd.DataFrame({
-        #'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.subheader("0 Iris Setosa")
-    st.image("setosa.png", width=300)
-
-with col2:
-    st.header("1 Iris Versicolor")
-    st.image("versicolor.jpg",width=300)
-
-with col3:
-    st.header("2 Iris Virginica")
-    st.image("virginica.jpg",width=300)
+st.image('flowers.png', width=300)
+st.write(pd.DataFrame({
+        'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
