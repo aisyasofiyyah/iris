@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
