@@ -35,7 +35,7 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 #image = Image.open('setosa.png')
-st.image('setosa.png', caption='Sunrise by the mountains')
+image1 = st.image('setosa.png')
 #image2= Image.open('versicolor.png')
 #image3= Image.open('virginica.png')
 
