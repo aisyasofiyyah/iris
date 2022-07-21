@@ -6,7 +6,7 @@ st.write("""
 # Iris Flower Prediction App
 This app predicts the **Iris flower** type.
 """)
-
+st.image('setosa.png')
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
@@ -33,8 +33,8 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-st.write(pd.table({
-        'Picture': [st.image('setosa.png'), 'versicolor.png', 'virginica.png'],
+st.write(pd.DataFrame({
+        'Picture': ['x', 'versicolor.png', 'virginica.png'],
         'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
