@@ -33,7 +33,7 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-image = Image.open('setosa.png')
+#image = Image.open('setosa.png')
 image1 = st.image('setosa.png')
 #image2= Image.open('versicolor.png')
 #image3= Image.open('virginica.png')
