@@ -21,9 +21,8 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
-st.sidebar.image('setosa.png', width=200)
-
 df = user_input_features()
+st.sidebar.image('setosa.png', width=200)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
