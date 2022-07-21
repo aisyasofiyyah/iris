@@ -34,9 +34,19 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-st.write(pd.DataFrame({
-        'Picture': ['x', 'versicolor.png', 'virginica.png'],
-        'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
+#st.write(pd.DataFrame({
+        #'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
+
+col1, col2, col3 = st.beta_columns([1,6,1])
+
+with col1:
+st.write("In")
+
+with col2:
+st.image("setosa.png")
+
+with col3:
+st.write("Iris Setosa'")
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
@@ -45,7 +55,7 @@ with tab1:
     st.write(df)
 
 with tab2:
-    st.markdown("The results of the machine learning.")
+    st.markdown("The results of the Machine Learning.")
         
     col1, col2 = st.columns(2)
 
