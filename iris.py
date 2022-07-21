@@ -23,10 +23,6 @@ def user_input_features():
 
 df = user_input_features()
 
-with st.expander("User Input Parameters"):
-    st.markdown('Input changes based on what user pick.')
-    st.write(df)
-
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
 Y = iris.species
@@ -37,19 +33,33 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-tab1, tab2, tab3 = st.tabs(["Class labels", "Prediction", "Prediction Probability"])
+tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
 with tab1:
-    st.subheader('Class labels and index number')
-    st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
+    st.header("User Input Parameters")
+    st.markdown('Input changes based on what user pick.')
+    st.write(df)
 
 with tab2:
-     st.subheader('Prediction')
-     st.write(prediction)
+     st.header("Results")
+        
+     col1, col2, col3 = st.columns(3)
 
-with tab3:
-     st.subheader('Prediction Probability')
-     st.write(prediction_proba)
+    with col1:
+        st.subheader('Class labels and index number')
+        st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
+    
+    with col2:
+        st.subheader('Prediction')
+        st.write(prediction)
+
+    with col3:
+        st.subheader('Prediction Probability')
+        st.write(prediction_proba)
+        
+     
+     
+     
         
         
         
