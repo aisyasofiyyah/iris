@@ -34,12 +34,13 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-#image = Image.open('setosa.png')
+image = Image.open('setosa.png')
 image1 = st.image('setosa.png')
 #image2= Image.open('versicolor.png')
 #image3= Image.open('virginica.png')
 
 st.write(pd.DataFrame({
+        'Picture': ['image1', 'image', image],
         'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
