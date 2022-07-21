@@ -37,8 +37,9 @@ image1= st.image("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png")
 image2= st.image("https://github.com/aisyasofiyyah/iris/blob/main/versicolor.png")
 image3= st.image("https://github.com/aisyasofiyyah/iris/blob/main/virginica.png")
 
+st.image([image1,image2])
+
 st.write(pd.DataFrame({
-        'Picture': [setosa.png, 'setosa.png', image3],
         'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
