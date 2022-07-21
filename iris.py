@@ -37,7 +37,7 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-      st.write(pd.DataFrame({'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
+      st.write(pd.DataFrame({'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=100, height=100)
 
 with col2:
     st.image('flowers.png', width=500)
