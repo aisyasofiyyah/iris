@@ -40,7 +40,7 @@ image1 = st.image('setosa.png')
 #image3= Image.open('virginica.png')
 
 st.write(pd.DataFrame({
-        'Picture': ['image1', 'image', image],
+        'Picture': ['image1', 'x' , 'xx'],
         'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
