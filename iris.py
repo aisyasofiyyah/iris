@@ -33,8 +33,6 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-st.sidebar.write("Class labels and index number")
-
 st.write(pd.DataFrame({
         'Picture': [st.image("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png"), st.image("https://github.com/aisyasofiyyah/iris/blob/main/versicolor.png"),
         st.image("https://github.com/aisyasofiyyah/iris/blob/main/virginica.png")],
