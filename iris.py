@@ -34,7 +34,7 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 st.write(pd.DataFrame({
-        'Picture': [setosa.png, 'versicolor.png', 'virginica.png'],
+        'Picture': [st.image('setosa.png'), 'versicolor.png', 'virginica.png'],
         'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
