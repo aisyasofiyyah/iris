@@ -37,16 +37,13 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.write(' ')
+      st.write(pd.DataFrame({'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 with col2:
     st.image('flowers.png', width=500)
 
 with col3:
     st.write(' ')
-    
-st.write(pd.DataFrame({
-        'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
