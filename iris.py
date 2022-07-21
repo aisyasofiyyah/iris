@@ -8,7 +8,6 @@ This app predicts the **Iris flower** type.
 """)
 
 st.sidebar.header('User Input Parameters')
-st.image('setosa.png', width=200)
 
 def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
@@ -21,6 +20,8 @@ def user_input_features():
             'Petal Width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
+
+st.sidebar.image('setosa.png', width=200)
 
 df = user_input_features()
 
