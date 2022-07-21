@@ -33,27 +33,30 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
+st.sidebar.write("Class labels and index number")
+
+st.write(pd.DataFrame({
+        'Picture': [st.image("https://github.com/aisyasofiyyah/iris/blob/main/setosa.png")
+        st.image("https://github.com/aisyasofiyyah/iris/blob/main/versicolor.png")
+        st.image("https://github.com/aisyasofiyyah/iris/blob/main/virginica.png")],
+        st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
+
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
 with tab1:
-    st.header("User Input Parameters")
-    st.markdown('Input changes based on what user pick.')
+    st.markdown('Input in the table will change based on what user pick.')
     st.write(df)
 
 with tab2:
-    st.header("Results")
+    st.markdown("The results of the machine learning.")
         
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader('Class labels and index number')
-        st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
-    
-    with col2:
         st.subheader('Prediction')
         st.write(prediction)
-
-    with col3:
+    
+    with col2:
         st.subheader('Prediction Probability')
         st.write(prediction_proba)
         
