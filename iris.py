@@ -3,8 +3,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Simple Iris Flower Prediction App
-This app predicts the **Iris flower** type!
+# Iris Flower Prediction App
+This app predicts the **Iris flower** type.
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -38,7 +38,7 @@ prediction_proba = clf.predict_proba(df)
 #image3 = st.image('virginica.png')
 
 st.write(pd.DataFrame({
-        #'Picture': [st.image('setosa.png'), st.image('versicolor.png') , st.image('virginica.png')],
+        'Picture': [st.image('setosa.png'), st.image('versicolor.png') , st.image('virginica.png')],
         'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
