@@ -20,7 +20,7 @@ def user_input_features():
             'Petal Width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
-st.image('setosa.png', width=200)
+    st.image('setosa.png', width=200)
 
 df = user_input_features()
 
