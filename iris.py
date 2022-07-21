@@ -37,19 +37,19 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-col1, col2, col3 = st.columns([3,1,2])
+tab1, tab2, tab3 = st.tabs(["Class labels", "Prediction", "Prediction Probability"])
 
-with col1:
-        st.subheader('Class labels and index number')
-        st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
+with tab1:
+    st.subheader('Class labels and index number')
+    st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
-with col2:
-        st.subheader('Prediction')
-        st.write(prediction)
+with tab2:
+     st.subheader('Prediction')
+     st.write(prediction)
 
-with col3:
-        st.subheader('Prediction Probability')
-        st.write(prediction_proba)
+with tab3:
+     st.subheader('Prediction Probability')
+     st.write(prediction_proba)
         
         
         
