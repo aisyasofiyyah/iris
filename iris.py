@@ -14,17 +14,18 @@ def user_input_features():
     sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
     petal_length = st.sidebar.slider('Petal length', 1.0, 6.9, 1.3)
     petal_width = st.sidebar.slider('Petal width', 0.1, 2.5, 0.2)
-    data = {'sepal_length': sepal_length,
-            'sepal_width': sepal_width,
-            'petal_length': petal_length,
-            'petal_width': petal_width}
+    data = {'Sepal Length': sepal_length,
+            'Sepal Width': sepal_width,
+            'Petal Length': petal_length,
+            'Petal Width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
 
 df = user_input_features()
 
-st.subheader('User Input parameters')
-st.write(df)
+with st.expander("Result"):
+    st.subheader('User Input parameters')
+    st.write(df)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
@@ -36,19 +37,17 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-with st.expander("Result"):
-        
-    col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3)
 
-    with col1:
+with col1:
         st.subheader('Class labels and their corresponding index number')
         st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
-    with col2:
+with col2:
         st.subheader('Prediction')
         st.write(prediction)
 
-    with col3:
+with col3:
         st.subheader('Prediction Probability')
         st.write(prediction_proba)
         
