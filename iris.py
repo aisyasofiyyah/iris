@@ -23,8 +23,8 @@ def user_input_features():
 
 df = user_input_features()
 
-with st.expander("Result"):
-    st.subheader('User Input parameters')
+with st.expander("User Input Parameters"):
+    st.markdown('Input changes based on what user pick.')
     st.write(df)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
@@ -37,10 +37,10 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(2)
 
 with col1:
-        st.subheader('Class labels and their corresponding index number')
+        st.subheader('Class labels and index number')
         st.write(pd.DataFrame({'Species': ['Iris-setosa','Iris-versicolor','Iris_virginica'],}))
 
 with col2:
