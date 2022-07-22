@@ -41,7 +41,7 @@ col1, col2, col3 = st.columns(3)
  
 with col1:
     st.dataframe(pd.DataFrame({
-          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=50, height=50) 
+          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=400, height=500) 
 
 with col2:
     st.image('flowers.png', width=500)
