@@ -37,7 +37,7 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-col1, col2, col3, col4 = st.columns(4,gap="gap")   
+col1, col2, col3, col4 = st.columns(4,gap="small")   
  
 with col1:
     st.write(' ')
