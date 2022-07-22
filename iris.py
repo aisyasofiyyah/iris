@@ -2,10 +2,12 @@ import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-st.write("""
+#st.write("""
 # Iris Flower Prediction App
-This app predicts the **Iris flower** type.
-""")
+#This app predicts the **Iris flower** type.
+#""",)
+st.markdown("<h1 style='text-align: center; color: red;'>Iris Flower Prediction App</h1>", unsafe_allow_html=True)
+
 
 st.sidebar.header('User Input Parameters')
 
