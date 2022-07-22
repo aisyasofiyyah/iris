@@ -1,3 +1,13 @@
 .st-bi {
-    background: linear-gradient(to right, rgb(201, 169, 166) 0%, rgb(201, 169, 166) 30.5556%, rgba(151, 166, 195, 0.25) 30.5556%, rgba(151, 166, 195, 0.25) 100%);
+    background: linear-gradient(to right, rgb(201, 169, 166) 0%, rgb(201, 169, 166) 100%, rgba(151, 166, 195, 0.25) 0%, rgba(151, 166, 195, 0.25) 100%);
+}
+
+.css-demzbm {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(201, 169, 166);
+}
+
+.st-bm {
+    background: linear-gradient(to right, rgb(201, 169, 166) 0%, rgb(201, 169, 166) 100%, rgba(151, 166, 195, 0.25) 0%, rgba(151, 166, 195, 0.25) 100%);
 }
