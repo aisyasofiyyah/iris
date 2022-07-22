@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 with open('custom.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center; color: black;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
 st.sidebar.write("This app predicts the **Iris flower** type.")
 st.sidebar.header('User Input Parameters')
