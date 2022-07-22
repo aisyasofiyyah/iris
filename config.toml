@@ -1,7 +1,6 @@
 [theme]
-font="serif"
-primaryColor="purple"
-
-.stSlider {
-    background-color: blue;
-}
+primaryColor="#F63366"
+backgroundColor="#C9A9A6"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
