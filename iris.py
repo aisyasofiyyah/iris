@@ -6,8 +6,6 @@ st.set_page_config(layout="wide")
 #with open('custom.css') as f:        
         #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
-primary_clr = st.get_option("theme.primaryColor")
-
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
 #st.sidebar.image('setosa.png', width= 225)
@@ -60,11 +58,11 @@ with tab2:
 
     with col1:
         st.subheader('Prediction')
-        st.write(prediction)
+        st.table(prediction)
     
     with col2:
         st.subheader('Prediction Probability')
-        st.write(prediction_proba)
+        st.table(prediction_proba)
         
      
      
