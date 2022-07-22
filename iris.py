@@ -49,9 +49,6 @@ with col2:
 with col3:
     st.image('flowers.png', width=500)
 
-with col4:
-    st.write(' ')
-
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
 with tab1:
