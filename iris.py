@@ -10,7 +10,8 @@ primary_clr = st.get_option("theme.primaryColor")
 
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
-st.sidebar.image('setosa.png', width= 225)
+#st.sidebar.image('setosa.png', width= 225)
+st.sidebar.(pd.DataFrame({'Species/Type': ['Iris Setosa','Iris Versicolor','Iris Virginica'],})
 st.sidebar.markdown("<h2 style='text-align: center;'>User Input Parameters</h2>", unsafe_allow_html=True)
 
 def user_input_features():
@@ -44,7 +45,7 @@ with col1:
 
 with col2:
     st.dataframe(pd.DataFrame({
-          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
+          'Species/Type': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 with col3:
     st.write(' ')
