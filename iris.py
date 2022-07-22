@@ -15,7 +15,6 @@ st.sidebar.markdown("<h2 style='text-align: center;'>User Input Parameters</h2>"
 
 def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
-    st.write('Values:', sepal_length)
     sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
     petal_length = st.sidebar.slider('Petal length', 1.0, 6.9, 1.3)
     petal_width = st.sidebar.slider('Petal width', 0.1, 2.5, 0.2)
@@ -41,8 +40,8 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns(3)   
  
 with col1:
-    st.write(pd.DataFrame({
-          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],})) 
+    st.dataframe(pd.DataFrame({
+          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=50, height=50) 
 
 with col2:
     st.image('flowers.png', width=500)
