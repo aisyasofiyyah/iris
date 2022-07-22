@@ -10,7 +10,7 @@ primary_clr = st.get_option("theme.primaryColor")
 
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
-st.sidebar.image('setosa.png', height=100, use_column_width=True)
+st.sidebar.image('setosa.png', width=50, use_column_width=True)
 st.sidebar.write("This app predicts the **Iris flower** type.")
 st.sidebar.header('User Input Parameters')
 
