@@ -11,7 +11,7 @@ primary_clr = st.get_option("theme.primaryColor")
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
 st.sidebar.image('setosa.png', width= 240)
-st.sidebar.markdown("<h3 style='text-align: center;'>User Input Parameters</h3>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='text-align: center;'>User Input Parameters</h2>", unsafe_allow_html=True)
 
 def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
