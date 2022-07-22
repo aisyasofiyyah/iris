@@ -3,15 +3,15 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.set_page_config(layout="wide")
-with open('custom.css') as f:        
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+#with open('custom.css') as f:        
+        #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
 primary_clr = st.get_option("theme.primaryColor")
 
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
 #st.sidebar.image('setosa.png', width= 225)
-st.sidebar.dataframe(pd.DataFrame({'Species/Type': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), use_sidebar_width = True)
+st.sidebar.table(pd.DataFrame({'Species/Type': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 st.sidebar.markdown("<h2 style='text-align: center;'>User Input Parameters</h2>", unsafe_allow_html=True)
 
 def user_input_features():
