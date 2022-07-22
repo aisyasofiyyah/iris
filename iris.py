@@ -37,11 +37,11 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-col1, col2, col3 = st.columns(3,gap="small")   
+col1, col2, col3 = st.columns(3,gap="large")   
  
 with col1:
     st.dataframe(pd.DataFrame({
-          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=500, height=180) 
+          'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}), width=500) 
 
 with col2:
     st.image('flowers.png', width=500)
