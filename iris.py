@@ -45,9 +45,10 @@ with col1:
 with col2:
     st.write(pd.DataFrame({
           'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],})) 
+    st.image('flowers.png', width=400)
 
 with col3:
-    st.image('flowers.png', width=500)
+    st.image(' ')
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
