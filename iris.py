@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-def local_css(custom.css):
-    with open(custom.css) as f:
+with open('custom.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center; color: black;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
@@ -24,7 +23,7 @@ def user_input_features():
     return features
 
 df = user_input_features()
-st.sidebar.image('setosa.png', width=200, center)
+st.sidebar.image('setosa.png', width=200)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
