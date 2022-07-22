@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.markdown("<h1 style='text-align: center; color: black;'>Iris Flower Prediction App</h1>", unsafe_allow_html=True)
-st.write("This app predicts the **Iris flower** type.")
 
 
 st.sidebar.header('User Input Parameters')
@@ -23,10 +22,6 @@ def user_input_features():
 df = user_input_features()
 st.sidebar.image('setosa.png', width=200)
 
-.stSlider {
-    background-color: blue;
-}
-
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
 Y = iris.species
@@ -40,7 +35,8 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-      st.write(pd.DataFrame({
+    st.write("This app predicts the **Iris flower** type."
+    st.write(pd.DataFrame({
           'Species': ['Iris Setosa','Iris Versicolor','Iris Virginica'],}))
 
 with col2:
