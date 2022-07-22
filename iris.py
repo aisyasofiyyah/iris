@@ -38,16 +38,16 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-col1, col2, col3 = st.columns([3,1,2])   
+col1, col2, col3 = st.columns([2,3,2])   
  
 with col1:
    st.write(' ')
 
 with col2:
-   st.write(' ')
+   st.image('flowers.png', width=500)
 
 with col3:
-   st.image('flowers.png', width=500)
+   st.write(' ')
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
