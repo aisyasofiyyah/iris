@@ -56,8 +56,6 @@ with tab1:
     st.write(df)
 
 with tab2:
-    st.markdown("The results of the Machine Learning.")
-        
     col1, col2 = st.columns(2)
 
     with col1:
