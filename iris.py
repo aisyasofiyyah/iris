@@ -41,13 +41,13 @@ prediction_proba = clf.predict_proba(df)
 col1, col2, col3 = st.columns([3,1,2])   
  
 with col1:
-   st.write(' ')
-
-with col2:
    st.image('flowers.png', width=500)
 
+with col2:
+   st.write(' ')
+
 with col3:
-    st.write(' ')
+   st.write(' ')
 
 tab1, tab2 = st.tabs(["User Input Parameters", "Results"])
 
