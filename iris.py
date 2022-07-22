@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.markdown("<h1 style='text-align: center; color: black;'>Iris Flower Prediction App</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: black;'>This app predicts the **Iris flower** type.</h2>", unsafe_allow_html=True)
+st.write("This app predicts the **Iris flower** type.)
 
 
 st.sidebar.header('User Input Parameters')
