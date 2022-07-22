@@ -23,6 +23,10 @@ def user_input_features():
 df = user_input_features()
 st.sidebar.image('setosa.png', width=200)
 
+.stSlider {
+    background-color: blue;
+}
+
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
 Y = iris.species
