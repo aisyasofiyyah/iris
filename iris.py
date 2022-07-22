@@ -7,6 +7,7 @@ with open('custom.css') as f:
 
 st.markdown("<h1 style='text-align: center;'>✿ Iris Flower Prediction App ✿</h1>", unsafe_allow_html=True)
 
+st.sidebar.image('setosa.png', width=150)
 st.sidebar.write("This app predicts the **Iris flower** type.")
 st.sidebar.header('User Input Parameters')
 
@@ -23,7 +24,6 @@ def user_input_features():
     return features
 
 df = user_input_features()
-st.sidebar.image('setosa.png', width=200)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/aisyasofiyyah/iris/main/IRIS.csv')
 X = iris.drop('species', axis=1)
