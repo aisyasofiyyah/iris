@@ -58,11 +58,11 @@ with tab2:
 
     with col1:
         st.subheader('Prediction')
-        st.table(prediction)
+        st.write(prediction)
     
     with col2:
         st.subheader('Prediction Probability')
-        st.table(prediction_proba)
+        st.write(prediction_proba)
         
      
      
