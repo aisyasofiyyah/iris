@@ -1,0 +1,7 @@
+[theme]
+font="serif"
+primaryColor="purple"
+
+.stSlider {
+    background-color: blue;
+}
